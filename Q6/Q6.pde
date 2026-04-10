@@ -36,4 +36,6 @@ void draw(){
   PVector handleDir = mouse.copy().normalize().mult(30);
   PVector handleBack = handleDir.copy().mult(-1);
   line(handleBack.x, handleBack.y, handleDir.x, handleDir.y);
+  
+  println(mouse.mag());
 }
